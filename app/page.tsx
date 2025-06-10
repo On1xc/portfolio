@@ -1,35 +1,27 @@
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-8 sm:p-20">
-      <main className="flex flex-col gap-8 items-center sm:items-start max-w-4xl w-full">
-        <h1 className="text-3xl font-bold text-center sm:text-left">
-          Welcome to My Portfolio
-        </h1>
-        <p className="text-lg text-center sm:text-left">
-          Explore my projects, learn more about me, and get in touch.
-        </p>
-        <nav aria-label="Main navigation" className="flex gap-4 flex-wrap justify-center sm:justify-start">
-          <a
-            href="/about"
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-gray-800 text-white hover:bg-gray-700 font-medium text-sm sm:text-base h-10 px-5"
-          >
-            About Me
-          </a>
-          <a
-            href="/projects"
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-gray-800 text-white hover:bg-gray-700 font-medium text-sm sm:text-base h-10 px-5"
-          >
-            My Projects
-          </a>
-          <a
-            href="/contact"
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-gray-800 text-white hover:bg-gray-700 font-medium text-sm sm:text-base h-10 px-5"
-          >
-            Contact Me
-          </a>
-        </nav>
+    <div className="min-h-[calc(100vh-100px)] flex flex-col">
+      <main className="flex-1 container mx-auto px-4 py-12 flex flex-col items-center text-center">
+        <h1 className="text-3xl sm:text-4xl font-bold mb-8">Über mich</h1>
+        
+        <div className="max-w-2xl mx-auto flex flex-col items-center gap-8">
+          <img
+            src="/collin.jpeg"
+            alt="Collin Weber"
+            className="w-48 h-48 rounded-full object-cover shadow-lg ring-4 ring-gray-100"
+          />
+          
+          <div className="space-y-4">
+            <p className="text-lg sm:text-xl leading-relaxed">
+              Hallo, Ich bin Collin Weber,<br />
+              18 Jahre alt und Lernender Informatiker fachrichtung Applikationsentwicklung.<br />
+              Nebenbei spiele ich Professionell Volleyball beim VBC Uni Bern in der Nationalliga B
+            </p>
+          </div>
+        </div>
       </main>
-      <footer className="mt-10 text-center text-sm text-gray-500">
+
+      <footer className="py-6 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} My Portfolio. All rights reserved.
       </footer>
     </div>
